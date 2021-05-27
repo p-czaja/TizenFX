@@ -15,5 +15,6 @@
   </ui-application>
 	<privileges>
         <privilege>http://tizen.org/privilege/camera</privilege>
+        <privilege>http://tizen.org/privilege/window.priority.set</privilege>
   </privileges>
 </manifest>

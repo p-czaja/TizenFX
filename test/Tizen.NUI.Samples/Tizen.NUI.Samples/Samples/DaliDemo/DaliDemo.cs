@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Tizen.NUI.BaseComponents;
+using log = Tizen.Log;
 
 namespace Tizen.NUI.Samples
 {
@@ -49,7 +50,7 @@ namespace Tizen.NUI.Samples
 
             foreach (Type type in assembly.GetTypes())
             {
-                if (exampleType.IsAssignableFrom(type) && type.Name != "SampleMain" && this.GetType() != type && true == type.IsClass)
+                if (exampleType.IsAssignableFrom(type) && type.Name == "ToastSample" && this.GetType() != type && true == type.IsClass)
                 {
                     demo.AddExample(new Example(type.FullName, type.Name));
                 }

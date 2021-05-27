@@ -23,10 +23,7 @@ namespace Tizen.NUI.Samples
             };
             root.Layout = new LinearLayout() { LinearOrientation = LinearLayout.Orientation.Vertical };
             window.Add(root);
-
-            CreateTextView();
-            CreateToastView();
-            CreateLogPadView();
+            Notification.MakeToast("Hello World!", Notification.ToastBottom).Post(Notification.ToastLong);
         }
 
         private void CreateTextView()
